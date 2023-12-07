@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".Admin.StatisticActivity">
+
+    <TextView
+        android:id="@+id/textViewStartDate"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/textViewEndDate"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:textSize="20dp"
+        android:layout_toRightOf="@+id/textViewStartDate"
+        />
+
+    <Button
+        android:id="@+id/buttonDateStart"
+        android:layout_width="129dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="20dp"
+        app:backgroundTint="@null"
+        android:background="@drawable/custom_button"
+        android:text="Ngày bắt đầu"
+        android:textColorLink="#000011"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonEndDate"
+        android:layout_width="149dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/textViewStartDate"
+        android:background="@drawable/custom_button"
+        app:backgroundTint="@null"
+        android:text="Ngày kết thúc"
+        android:textColorLink="#000011"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonRevenue"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewStartDate"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Thống kê"
+        app:backgroundTint="@null"
+        android:textColorLink="#000011"
+        android:textStyle="bold"
+        android:background="@drawable/custom_button" />
+    <TextView
+        android:id="@+id/textViewTotalBill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:gravity="center"
+        android:layout_below="@id/buttonRevenue"
+        android:text="Tổng hóa đơn"
+        android:textSize="24sp"
+        android:fontFamily="@font/quicksandbold" />
+    <TextView
+        android:id="@+id/textViewHeaderNameProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTotalBill"
+        android:text="Tên sản phẩm"
+        android:textSize="15sp"
+        android:fontFamily="@font/quicksandbold" />
+    <TextView
+        android:id="@+id/textViewHeaderQuantityProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTotalBill"
+        android:layout_toRightOf="@+id/textViewHeaderNameProduct"
+        android:text="Số lượng"
+        android:layout_marginLeft="45dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/quicksandbold" />
+    <TextView
+        android:id="@+id/textViewHeaderTotalProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTotalBill"
+        android:layout_toRightOf="@+id/textViewHeaderQuantityProduct"
+        android:text="Tổng tiền"
+        android:layout_marginLeft="50dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/quicksandbold" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvRevenue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonRevenue"
+        android:layout_alignLeft="@+id/buttonRevenue"
+        android:layout_marginLeft="-128dp"
+        android:layout_marginTop="69dp">
+
+    </ListView>
+
+</RelativeLayout>

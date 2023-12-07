@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User.DetailProductActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chi tiết sản phẩm"
+                android:fontFamily="@font/quicksandbold"
+                android:textSize="25sp"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/tv_ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ten_sp"
+                android:textSize="16dp"
+                android:fontFamily="@font/quicksandbold"
+                />
+
+            <EditText
+                android:id="@+id/txtProductName"
+                android:layout_width="match_parent"
+                android:enabled="false"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/tv_Category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/danh_muc"
+                android:textSize="16dp"
+                android:fontFamily="@font/quicksandbold"/>
+
+            <EditText
+                android:id="@+id/editxtcategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false" />
+
+            <TextView
+                android:id="@+id/tv_Quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/so_luong"
+                android:textSize="16dp"
+                android:fontFamily="@font/quicksandbold"/>
+
+            <EditText
+                android:id="@+id/txtQuantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false" />
+
+            <TextView
+                android:id="@+id/tv_Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gia_ca"
+                android:textSize="16dp"
+                android:fontFamily="@font/quicksandbold"/>
+
+            <EditText
+                android:id="@+id/txtPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false" />
+
+            <ImageView
+                android:id="@+id/imgHinh"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="5.82"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/packaging" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

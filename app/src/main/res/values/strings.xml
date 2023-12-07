@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DuAn1_WD18301_N3</string>
+    <string name="gia_ca">Giá cả</string>
+    <string name="so_luong">Số lượng</string>
+    <string name="danh_muc">Danh mục</string>
+    <string name="ten_sp">Tên sản phẩm</string>
+</resources>

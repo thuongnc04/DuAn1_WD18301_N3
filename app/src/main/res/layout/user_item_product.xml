@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="12"
+        android:background="@drawable/custom_card"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/productImage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:src="@drawable/packaging" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="6"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtProductName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Name product"
+                android:textColor="@color/black"
+                android:fontFamily="@font/quicksandbold"
+                android:focusable="false"/>
+
+            <TextView
+                android:id="@+id/txtProductPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:textColor="#AA0000"
+                android:textStyle="italic"
+                android:focusable="false"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAddToShoppingCart"
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:drawableBottom="@drawable/ic_shopping"
+            android:backgroundTint="#00BCD4"
+            android:focusable="false"/>
+    </LinearLayout>
+
+</LinearLayout>
